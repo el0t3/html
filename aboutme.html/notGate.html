@@ -1,0 +1,68 @@
+<style>
+/* SAME STYLE YOU USE ACROSS ALL PAGES */
+body {
+    background-color: #b3b3b3;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.box {
+    background-color: #a9a9a9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button {
+    width: 120px;
+    padding: 12px;
+    margin: 10px;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 18px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e8e8e8;
+}
+</style>
+
+<div class="container">
+
+    <h1>Project 1: Not Gate</h1>
+
+    <div class="box" style="display:flex; justify-content:space-between;">
+
+        <!-- INPUT SECTION -->
+        <div style="width:45%;">
+            <h2>Input</h2>
+            <button onclick="setInput(1)">ON</button><br>
+            <button onclick="setInput(0)">OFF</button>
+        </div>
+
+        <!-- OUTPUT SECTION -->
+        <div style="width:45%;">
+            <h2>Output</h2>
+            <img id="notOutput" src="not_off.png" width="300">
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function setInput(value) {
+    // input 1 → NOT output 0
+    // input 0 → NOT output 1
+    const img = value === 1 ? "not_off.png" : "not_on.png";
+    document.getElementById("notOutput").src = img;
+}
+</script>
+
+

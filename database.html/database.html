@@ -1,58 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Daniel's Page</title>
+  <title>Database</title>
   <style>
-    /* General Reset */
+    /* Reset */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* Body styling */
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       background: linear-gradient(135deg, #e3f2fd, #bbdefb);
       color: #333;
       text-align: center;
       min-height: 100vh;
-      padding-bottom: 40px;
+      padding-bottom: 50px;
     }
 
-    /* Logo */
-    img {
-      width: 220px;
+    /* Header */
+    h1 {
+      font-size: 2.5em;
+      color: #0d47a1;
       margin-top: 40px;
-      border-radius: 8px;
+    }
+
+    /* Image styling */
+    img {
+      margin-top: 30px;
+      width: 80%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
       transition: transform 0.3s ease;
     }
 
     img:hover {
-      transform: scale(1.05);
+      transform: scale(1.02);
     }
 
-    /* Title */
-    h1 {
-      margin-top: 20px;
-      font-size: 2.2em;
-      color: #0d47a1;
+    /* Documentation link image */
+    .database-link {
+      display: block;
+      margin: 30px auto;
+      background: none;
+      padding: 0;
+      box-shadow: none;
     }
 
-    /* Paragraph */
-    p {
-      width: 80%;
-      margin: 20px auto 30px;
-      line-height: 1.6;
-      font-size: 17px;
-      color: #333;
-      background-color: #ffffffd9;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Links as buttons */
+    /* Navigation buttons */
     a {
       display: inline-block;
       margin: 10px;
@@ -71,9 +69,9 @@
       transform: translateY(-2px);
     }
 
-    /* Footer space */
+    /* Footer */
     footer {
-      margin-top: 50px;
+      margin-top: 40px;
       color: #555;
       font-size: 14px;
     }
@@ -82,14 +80,14 @@
 
 <body>
 
-  <img src="https://www.unitar.org/sites/default/files/styles/col_4_landscape_380x215_/public/media/image/UB%20Logo%20hi%20(2).png?itok=J0g8kSym" alt="UB Logo">
+  <h1>Database</h1>
 
-  <h1>Fundamentals of Computing</h1>
+  <!-- Clickable image -->
+  <a class="database-link" href="https://drive.google.com/file/d/1gL6zYcdEBFgzvh-4iPgwfkvESouDlsbX/view" target="_blank">
+    <img src="database.png" alt="Database">
+  </a>
 
-  <p>
-    This course is an introduction to the fundamentals of Computer Science that will provide students with a foundation for future courses in Computer Science. The course is a broad survey of the discipline through topics that allow students to understand the capabilities of computer systems in terms of: the computer architecture; operating systems and computer networks; software and software development; data organization and visualization; and the potential of computing machines.
-  </p>
-
+  <!-- Navigation links -->
   <a href="file:///C:/Users/pined/Downloads/HTML%20Final%20Project/index.html">Course</a>
   <a href="file:///C:/Users/pined/Downloads/HTML%20Final%20Project/project.html/project.html">Project</a>
   <a href="file:///C:/Users/pined/Downloads/HTML%20Final%20Project/concepts.html/concepts.html">Concepts</a>
@@ -98,8 +96,9 @@
   <a href="file:///C:/Users/pined/Downloads/HTML%20Final%20Project/aboutme.html/aboutme.html">About Me</a>
   <a href="file:///C:/Users/pined/Downloads/HTML%20Final%20Project/resume.html/resume.html">Resume</a>
 
+
   <footer>
-    <p> Designed by Daniel Pineda</p>
+    <p>Daniel Pineda | Fundamentals of Computing</p>
   </footer>
 
 </body>
